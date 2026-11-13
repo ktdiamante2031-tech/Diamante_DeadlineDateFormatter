@@ -1,0 +1,16 @@
+from datetime import date
+
+event = input()
+year = int(input())
+month = int(input())
+day = int(input())
+
+event_date = date(year, month, day)
+
+print("\nFormatted Output")
+print(f"Event: {event}")
+print("Date:", event_date)
+print("Year:", year)
+print("Month:", event_date.strftime("%B"))
+print("Day:", day)
+print("Weekday:", event_date.strftime("%A"))
